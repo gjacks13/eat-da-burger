@@ -1,0 +1,102 @@
+.page {
+  font-family: 'Chicle', cursive;
+  background-image: url("/assets/img/halftone-yellow.png");
+  background-repeat: repeat;
+}
+
+#app-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  color: #769aff;
+  margin: 20px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.app-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#burger-img {
+  width: 30%;
+  /* margin: 20px; */
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.uneaten-container {
+  display: inline-block;
+}
+
+.uneaten-burger {
+
+}
+
+.eaten-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.eaten-burger {
+  color: #8e8d8d;
+  background-color: rgba(255,151,118, 0.3);
+}
+
+.eaten-container, .uneaten-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.eaten-burger, .uneaten-burger {
+  padding: 15px;
+}
+
+#burger-form {
+  margin: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#burger-form > textarea {
+  display: block;
+}
+
+button {
+  background-color: rgb(118,154,255, 0.8); 
+  border: none;
+  color: black; 
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  border: 2px solid #769aff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.devour-btn {
+
+}
+
+#submit-btn {
+  background-color: white; 
+  border: none;
+  color: black; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #769AFF;
+  color: white;
+}
