@@ -2,7 +2,7 @@
   <img id="burger-img" src="/assets/img/burger.png" alt="An image of a burger">
   <h1 id="app-header">Eat-Da-Burger!</h1>
 
-  <div class="uneaten-container">
+  <div id="devourable-burgers" class="uneaten-container">
     <ul>
       {{#each burgers}}
         {{#unless this.devoured}} 
@@ -28,7 +28,7 @@
   </div>
 
   <form id="burger-form" action="/api/burger" method="POST">
-    <textarea type="text" name="burger_name"></textarea>
+    <textarea id="burger-box" type="text" name="burger_name"></textarea>
 
     <button id="submit-btn" type="submit">Submit</button>
   </form>
