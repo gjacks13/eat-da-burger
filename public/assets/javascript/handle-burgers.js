@@ -12,12 +12,9 @@ document.getElementById("burger-form").addEventListener("submit", function(e) {
     headers: new Headers({
       'Content-Type': 'application/json'
     })
-  }).then(res => res.json())
+  }).then(res => location.reload())
   .catch(error => console.error('Error:', error))
-  .then(response => console.log('Success:', response));
 });
-
-{/* <button class="devour-btn" data-burger_id="{{this.id}}">Devour it!</button> */}
 
 document.getElementById('devourable-burgers').addEventListener("click", function(e) {
   if (event.target.tagName.toLowerCase() === 'button') {
@@ -33,7 +30,7 @@ document.getElementById('devourable-burgers').addEventListener("click", function
         headers: new Headers({
           'Content-Type': 'application/json'
         })
-      }).then(res => {})
+      }).then(res => location.reload())
       .catch(error => console.error('Error:', error))
   }
 });
